@@ -47,8 +47,8 @@ export const HomePage: FC<RouteComponentProps> = ({ history }) => {
           Loading...
         </div>
       ) : (
-          <QuestionList data={questions || []} />
-        )}
+        <QuestionList data={questions || []} />
+      )}
     </Page>
   );
 };
