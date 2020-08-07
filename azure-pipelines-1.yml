@@ -20,6 +20,8 @@ steps:
     npm run build
     npm run test -- --ci --reporters=default --reporters=jest-junit
   displayName: 'npm install and build'
+  env: 
+    CI: true
 
 - task : PublishTestResults@1
   condition: succeededOrFailed()
