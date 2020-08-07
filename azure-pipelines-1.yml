@@ -17,6 +17,7 @@ steps:
 
 - script: |
     npm install
+    npm install jest -g
     npm install jest-junit
     npm run build
     jest --ci --reporters=default --reporters=jest-junit
